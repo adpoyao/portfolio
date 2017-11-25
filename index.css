@@ -90,6 +90,15 @@ header h1 {
   align-items: flex-start;
 }
 
+.header-caption  {
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+.header-caption span {
+  color: tomato;
+}
+
 .down-arrow {
   width: 10%;
 }
@@ -236,34 +245,91 @@ footer {
 }
 
 @media all and (min-width: 922px) {
+  * {
+    box-sizing: border-box;
+    font-family: 'Quattrocento', serif;
+    font-size: 16px;
+    line-height: 160%
+  }
+  
   /* Hide Mobile Features */
   .hamburger,
   .x,
+  .header-container,
   .header-mobile {
     display: none
   }
 
   header h1 {
-    font-size: 50px;
-    letter-spacing: 26px;
+    font-size: 58px;
+    letter-spacing: 32px;
+    margin: 20px 0
   }
 
   .less-space {
     letter-spacing: 6px
   }
 
-  .header-container {
-    border: none;
-  }
-
   .header-desktop {
     display: flex;
+    flex-flow: row wrap;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .header-desktop > * {
+    flex: 1 100%;
   }
 
   .header-title-desktop {
+    display: flex; 
+    flex-flow: row wrap;
+    align-items: center;
+    /* position: fixed;
+    max-width: 950px; */
+  }
+
+  .header-title-desktop h1 {
+    flex: 1 auto
+  }
+  .header-title-desktop hr {
+    flex: 4 auto; 
+    height: 15px; 
+    border: none; 
+    border-bottom: 1px solid grey
+  }
+  .header-title-desktop div {
+    flex: 2 auto; 
+    padding-top: 18px; 
+    text-align: right
+  }
+
+  .header-caption  {
+    letter-spacing: 5px;
+  }
+
+  body {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  nav {
+    margin: 0;
+    border-bottom: 1px solid rgb(151, 151, 151);
+  }
+
+  nav ul {
     display: flex;
-    flex-flow: row wrap
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    margin: 25px 0 10px 0;
+  }
+
 }
+
+
 
 
 /*
