@@ -5,7 +5,7 @@
   line-height: 160%
 }
 
-/* LINES  & DIVIDERS SETUP */
+/* LINES  & DIVIDERS */
 .divider-short {
   width: 75px;
   border-bottom: 2px solid rgb(216,216,216);
@@ -15,54 +15,74 @@
 .divider-medium {
   width: 100%;
   margin: 0 auto;
-  border-bottom: 2px solid rgb(216,216,216);
+  border-bottom: 1px solid rgb(216,216,216);
 }
 
-.hamburger {
-  padding-top: 12px;
-}
-
-.hamburger-stripe {
-  width: 35px;
-  height: 3px;
-  background-color: rgb(151,151,151);
-  margin-bottom: 10px;
-}
-
-.x {
-  position: relative;
-  height: 35px;
-  width: 35px; 
+.strike {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  margin-top: 3px
 }
 
-.x::before,
-.x::after {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 2px;
-  background-color: rgb(151, 151, 151);
+i {
+  font-size: 24px;
+  color: #999;
+  text-align: center;
 }
 
-.x::before {
-  transform: rotate(45deg);
+/* NAV */
+.hamburger {
+  background:none;
+  position:absolute;
+  right: 14%;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:1.6em;
+  cursor: pointer;
+  outline:none;
+  /* z-index:10000000000000; */
 }
 
-.x::after {
-  transform: rotate(-45deg);
+.cross {
+  background:none;
+  position:absolute;
+  right: 16%;
+  color:#999;
+  border:0;
+  font-size:3.4em;
+  line-height:58px;
+  cursor:pointer;
+  outline:none;
+  /* z-index:10000000000000; */
 }
 
-/* HEADER & BODY */
+/* .logo {
+  color:#999;
+  border:0;
+  font-size:3.4em;
+  line-height:65px;
+  } */
+
+/* HEADER & NAV */
 header {
   font-family: 'Vollkorn SC', serif;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0
+}
+
+/* nav,
+body {
+  margin-top: 30%;
+} */
+
 header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 14px; 
 }
 
@@ -79,33 +99,9 @@ header h1 {
   align-items: center;
   background-color: #FFFFFF;  
   width: 100%;
-  height: 130px;
+  height: 100px;
   padding: 0 14%;
   border-bottom: 1px solid rgb(151, 151, 151)  
-}
-
-.header-slideshow {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-}
-
-.header-caption  {
-  letter-spacing: 3px;
-  font-style: italic;
-}
-
-.header-caption span {
-  color: tomato;
-}
-
-.down-arrow {
-  width: 10%;
-}
-
-nav,
-body {
-  margin-top: 30%;
 }
 
 .nav-mobile {
@@ -116,8 +112,9 @@ body {
   align-items: center;
   background-color: #FFFFFF;
   width: 100%;
-  height: 360px;  
+  height: 380px;  
   border-bottom: 1px solid rgb(151, 151, 151);
+  border-top: 1px solid rgb(151, 151, 151);  
 }
 
 .nav-mobile li {
@@ -129,9 +126,29 @@ body {
   margin: 0 auto;
 }
 
+.header-slideshow {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* .header-slideshow-mobile {
+  padding: 0 1%;
+} */
+
+.header-caption  {
+  letter-spacing: 3px;
+  font-style: italic;
+}
+
+.header-caption span {
+  color: tomato;
+}
+
 .header-title-mobile {
   width: 100%;
-  margin-top: 130px
+  margin-top: 130px;
+  margin-bottom: -60px
 }
 
 .header-captions-mobile {
@@ -139,15 +156,15 @@ body {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-evenly;
-  margin: 0 14%
+  justify-content: space-around;
+  margin: 12% 14% 0
 }
 
-ul {
-  list-style-type: none;
-  padding: 0
+.down-arrow {
+  width: 10%;
 }
 
+/*  BODY  */
 main {
   margin-bottom: 80px;
 }
@@ -221,7 +238,7 @@ section {
 }
 
 footer {
-  height: 30px;
+  height: 40px;
   margin: 0 14% 3%;
 }
 
@@ -244,6 +261,15 @@ footer {
   display: none
 }
 
+
+
+
+
+
+
+
+
+
 @media all and (min-width: 922px) {
   * {
     box-sizing: border-box;
@@ -254,7 +280,7 @@ footer {
   
   /* Hide Mobile Features */
   .hamburger,
-  .x,
+  .cross,
   .header-container,
   .header-mobile {
     display: none
@@ -263,7 +289,7 @@ footer {
   header h1 {
     font-size: 58px;
     letter-spacing: 32px;
-    margin: 20px 0
+    margin: 10px 0
   }
 
   .less-space {
@@ -284,14 +310,13 @@ footer {
   .header-title-desktop {
     display: flex; 
     flex-flow: row wrap;
-    align-items: center;
-    /* position: fixed;
-    max-width: 950px; */
+    align-items: center; 
   }
 
   .header-title-desktop h1 {
     flex: 1 auto
   }
+
   .header-title-desktop hr {
     flex: 4 auto; 
     height: 15px; 
@@ -314,9 +339,22 @@ footer {
     line-height: 160%;
   }
 
+  main {
+    overflow: auto
+  }
+
+  nav, 
+  main, 
+  footer, 
+  body {
+    position: relative;
+    background-color: white;
+  }
+
   nav {
-    margin: 0;
+    margin: 550px 0 -611.45px 0 ;
     border-bottom: 1px solid rgb(151, 151, 151);
+    z-index: 150;
   }
 
   nav ul {
@@ -326,11 +364,23 @@ footer {
     font-weight: bold;
     margin: 25px 0 10px 0;
   }
-
 }
 
+.header-title-desktop {
+  position: fixed;
+  max-width: 950px;
+  top: 0;   
+}
 
+.main-nav-scrolled {
+  position: fixed;
+  width: 950px;
+  margin-top: 0;
+}
 
+main {
+  margin-top: 611.45px;
+}
 
 /*
 414 Break Point! 

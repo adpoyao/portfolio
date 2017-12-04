@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Eddie Po Portfolio" content="Portfolio of a Fullstack Web Developer">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Eddie Po Portfolio</title>
+  <title>EDDIE PO | Portfolio | Fullstack Dev</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">  
   <link rel="stylesheet" href="index.css">
   <link href="./lightbox/lightbox.css" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css?family=Quattrocento|Playfair+Display" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -21,14 +22,11 @@
       <h1 class="header-logo">EDDIE<span class="less-space"> </span>PO</h1>
 
       <!-- Mobile Menu: Hamburger -->
-      <div class="hamburger">
-        <div class="hamburger-stripe"></div>
-        <div class="hamburger-stripe"></div>
-        <div class="hamburger-stripe"></div>
-      </div>
-
+      <button class="hamburger" aria-label="Open Menu Box">&#9776;</button>
       <!-- Mobile Menu: X -->
-      <div class="x hidden"></div>
+      <button class="cross hidden" aria-label="Close Menu Box">&times;</button>
+      <!-- <button class="logo">&#2715;</button> -->
+      
     </div>
 
     <!-- Mobile Menu: List -->
@@ -48,11 +46,14 @@
 
     <!-- Mobile Menue: Captions -->
     <div class="header-title-mobile">
-      <img src="./img/slide1.jpg" class="header-slideshow">
+      <img src="./img/slide1.jpg" class="header-slideshow header-slideshow-mobile">
       <div class="header-captions-mobile">
-        <div class="divider-medium"></div> 
-        <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper</div>        
-        <img class="down-arrow" src="./icons/downarrow-icon.png">        
+        <div>
+          <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper</div>        
+          <div class="strike"><i class="fa">&#xf103;</i></div>
+        </div>
+        <div class="divider-medium"></div>       
+        <!-- <img class="down-arrow" src="./icons/downarrow-icon.png">         -->
       </div> 
     </div>  
   </div>  
