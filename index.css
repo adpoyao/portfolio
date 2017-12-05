@@ -2,7 +2,8 @@
   box-sizing: border-box;
   font-family: 'Quattrocento', serif;
   font-size: 16px;
-  line-height: 160%
+  line-height: 160%;
+  outline: none;
 }
 
 /* LINES  & DIVIDERS */
@@ -89,6 +90,11 @@ i {
       color: black;
     }
   }
+
+a {
+  text-decoration: none;
+  color: black
+}
 
 /* NAV */
 .hamburger {
@@ -199,7 +205,7 @@ header h1 {
 }
 
 .header-caption span {
-  color: tomato;
+  color: tomato
 }
 
 .header-title-mobile {
@@ -250,6 +256,10 @@ section {
   text-align: center;
 }
 
+.fa-angle-double-right {
+  color: tomato
+}
+
 .webdev-placeholder {
   width: 100%;
 }
@@ -290,13 +300,13 @@ section {
   flex-flow: column nowrap;
   justify-content: space-between; 
   align-items: center;
-  height: 330px;
-  margin: 20% 0
+  height: 250px;
+  margin: 5% 0
 }
 
 footer {
   height: 40px;
-  margin: 0 14% 3%;
+  margin: 0 14% -10%;
 }
 
 /* ICONS */
@@ -452,7 +462,9 @@ footer {
     text-align: right
   }
 
-  .header-title-desktop {
+  .header-title-desktop
+  /* nav  */
+  {
     padding-right: 3%
   }
 
@@ -467,7 +479,7 @@ footer {
   }
 
   main {
-    overflow: auto
+    /* overflow: auto */
   }
 
   nav, 
@@ -496,13 +508,13 @@ footer {
     position: fixed;
     max-width: 950px;
     top: 0;   
+    padding-right: 3%
   }
   
   .main-nav-scrolled {
     position: fixed;
     width: 950px;
     margin-top: 0;
-    flex: 1 100%
   }
   
   main {
@@ -610,9 +622,10 @@ footer {
   .contact-detail-container {
     flex: 1 33.33%;
     order: 2;
-    /* margin-top: 60px; */
+    margin-top: 10%;
+    margin-bottom: 0;
     display: flex;
-    flex-flow: row wrap
+    flex-flow: row wrap;
   }
 
     .contact-detail-container > * {
@@ -646,4 +659,11 @@ footer {
     letter-spacing: 32px;
     margin: 10px 0
   }
+  
 }
+
+@media all and (min-width: 980px) {
+  .header {
+  }
+}
+

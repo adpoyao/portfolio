@@ -8,13 +8,22 @@
   <title>EDDIE PO | Portfolio | Fullstack Dev</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">  
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="transition.css">  
   <link href="./lightbox/lightbox.css" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css?family=Quattrocento|Playfair+Display" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  
 </head>
+
+<script>
+  window.fadeIn = function(obj) {
+      $(obj).fadeIn(2000);
+  }
+</script>
+
 <body>
 
-  <header role="banner">
+  <header id="home" role="banner">
 
   <!-- Header: MOBILE -->
   <div class="header-mobile">
@@ -32,15 +41,15 @@
     <!-- Mobile Menu: List -->
     <nav role="navigation" class="nav-mobile hidden">
       <ul class="nav-list-container">
-        <li>home</li>
+        <li><a href="#home">home</a></li>
         <div class="divider-short"></div>  
-        <li>about</li>
+        <li><a href="#about">about</a></li>
         <div class="divider-short"></div>              
-        <li>webdev</li>
+        <li><a href="#webdev">webdev</a></li>
         <div class="divider-short"></div>              
-        <li>photos</li>
+        <li><a href="#photos">photos</a></li>
         <div class="divider-short"></div>              
-        <li>contact</li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
 
@@ -64,31 +73,32 @@
       <h1 class="header-logo">EDDIE<span class="less-space"> </span>PO</h1>
       <hr>
       <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper<span class="blinking-cursor">|</span></div>        
-      <img src="./img/slide1-desktop.png" class="header-slideshow header-slideshow-desktop">
+      <img id="preload" onload="fadeIn(this)" src="./img/slide1-desktop.png" class="header-slideshow header-slideshow-desktop" style="display:none;">
     </div>  
     <nav role="navigation" class="nav-desktop">
       <ul class="nav-list-container">
-        <li>home</li>
-        <li>about</li>
-        <li>webdev</li>
-        <li>photos</li>
-        <li>contact</li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#webdev">webdev</a></li>
+        <li><a href="#photos">photos</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
   </div>
 
 </header>
-  
+
   <!-- Main -->
   <main role="main hidden">
     <div class="main-container">
 
+      <div id="about" class="anchor about"></div>
       <!-- Main: About -->
       <div class="main-about-container">
         <section class="section-about">about</section>
         <div class="row-3">
           <img src="./img/self-portrait.png" class="about-self-portrait"></img>
-          <h3 class="about-name">Eddie Po Yao</h3>
+          <h3 class="about-name">Eddie Po Yao <span> </span> <i class="fa fa-angle-double-right"></i></h3>
           <div class="divider-short"></div>  
         </div>    
         <div class="row-2">
@@ -110,6 +120,7 @@
         </div>
       </div>
 
+      <div id="webdev" class="anchor webdev"></div>      
       <!-- Main: Webdev -->
       <div class="main-webdev-container">          
         <section class="section-webdev">webdev</section>
@@ -125,6 +136,7 @@
         </div>
       </div>
         
+      <div id="photos" class="anchor photos"></div>      
       <!-- Main: Photos -->
       <div class="main-photos-container">          
         <section class="section-photos">photos</section>
@@ -154,6 +166,7 @@
         </div>
       </div>
   
+      <div id="contact" class="anchor contact"></div>            
       <!-- Main: Contact -->
       <div class="main-contact-container">          
         <section class="section-contact">contact</section>
@@ -180,11 +193,6 @@
   <footer role="contentinfo" class="footer">
     <div class="divider-medium"></div>
   </footer>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous">
-  </script>  
   <script src="index.js"></script>
   <script src="./lightbox/lightbox.js"></script>
 </body>
