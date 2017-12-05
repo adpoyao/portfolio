@@ -30,16 +30,76 @@ i {
   text-align: center;
 }
 
+/*  BLINKING CURSOR  */
+.blinking-cursor {
+  font-weight: 50;
+  font-size: 16px;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+.blinking-cursor-header {
+  font-size: 18px
+}
+
+  @keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
+
 /* NAV */
 .hamburger {
   background:none;
   position:absolute;
   right: 14%;
   line-height:45px;
-  padding:5px 15px 0px 15px;
+  padding:5px 0px 0px 15px;
   color:#999;
   border:0;
-  font-size:1.6em;
+  font-size: 1.6em;
   cursor: pointer;
   outline:none;
   /* z-index:10000000000000; */
@@ -48,7 +108,8 @@ i {
 .cross {
   background:none;
   position:absolute;
-  right: 16%;
+  top: 17px;
+  right: 11.5%;
   color:#999;
   border:0;
   font-size:3.4em;
@@ -129,12 +190,8 @@ header h1 {
 .header-slideshow {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; 
 }
-
-/* .header-slideshow-mobile {
-  padding: 0 1%;
-} */
 
 .header-caption  {
   letter-spacing: 3px;
@@ -261,16 +318,75 @@ footer {
   display: none
 }
 
+/*  RESPONSIVE DESIGN*/
 
+@media all and (max-width: 320px) {
+  header h1 {
+    font-size: 18px;
+    letter-spacing: 10px;
+    margin: 10px 0
+  }
 
+  .header-captions-mobile .header-caption {
+    font-size: 12px;
+  }
 
+  .hamburger {
+    position: absolute;
+    top: 23px
+  }
+  
+  .cross {
+    font-size: 3em;
+    margin-right: 3px;
+    position: absolute;
+    top: 17px
+  }
+}
 
+@media all and (min-width: 480px) {
+  header h1 {
+    font-size: 28px;
+    letter-spacing: 18px;
+    margin: 10px 0
+  }
 
+  .hamburger {
+    /* position: absolute;
+    top: 23px */
+    font-size: 2em
+  }
+  
+  .cross {
+    font-size: 4em;
+    position: absolute;
+    top: 19px;
+    right: 12.5%
+  }
+}
 
+@media all and (min-width: 576px) {
+  header h1 {
+    font-size: 32px;
+    letter-spacing: 24px;
+    margin: 10px 0
+  }
 
+  .hamburger {
+    /* position: absolute;
+    top: 23px */
+    font-size: 2.2em
+  }
+  
+  .cross {
+    font-size: 4.1em;
+    position: absolute;
+    top: 19px;
+    right: 13%
+  }
+}
 
-
-@media all and (min-width: 922px) {
+@media all and (min-width: 768px) {
   * {
     box-sizing: border-box;
     font-family: 'Quattrocento', serif;
@@ -286,10 +402,17 @@ footer {
     display: none
   }
 
+  body {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  /*  HEADER & NAV  */
   header h1 {
-    font-size: 58px;
-    letter-spacing: 32px;
-    margin: 10px 0
+    font-size: 50px;
+    letter-spacing: 30px;
+    margin: 10px 0;
+    margin-right: -10px
   }
 
   .less-space {
@@ -329,6 +452,10 @@ footer {
     text-align: right
   }
 
+  .header-title-desktop {
+    padding-right: 3%
+  }
+
   .header-caption  {
     letter-spacing: 5px;
   }
@@ -364,27 +491,159 @@ footer {
     font-weight: bold;
     margin: 25px 0 10px 0;
   }
+
+  .header-title-desktop {
+    position: fixed;
+    max-width: 950px;
+    top: 0;   
+  }
+  
+  .main-nav-scrolled {
+    position: fixed;
+    width: 950px;
+    margin-top: 0;
+    flex: 1 100%
+  }
+  
+  main {
+    margin-top: 611.45px;
+  }
+
+  section {
+    margin: 0
+  }
+
+  .main-container {
+    display: flex; 
+    flex-direction: column;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .main-container > * {
+    display: flex;
+  }
+
+
+  /*  ABOUT  */
+  .main-about-container,
+  .main-webdev-container,
+  .main-contact-container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 80px 0 30px
+  }
+
+  .main-photos-container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 80px 0 30px
+  }
+
+  .main-about-container > section {
+    flex: 1 33.33%;
+    order: 1;
+  }
+
+  .main-about-container > .row-2 {
+    flex: 1 33.33%;
+    order: 2;
+    margin-right: 4%;
+  }
+
+  .main-about-container p {
+    margin-top: 0;
+  }
+
+  .main-about-container > .row-3 {
+    flex: 1 33.33%;
+    order: 3;
+  }
+
+
+  /*  WEBDEV  */
+  .main-about-container > section {
+    flex: 1 33.33%;
+    order: 1;
+  }
+
+  .main-about-container > .row-2 {
+    flex: 1 33.33%;
+    order: 2;
+    margin-right: 4%;
+  }
+
+
+  /*  PHOTOS  */
+  .main-photos-container > section {
+    flex: 1 33.33%;
+    order: 1;
+    margin: 0
+  }
+
+  .main-photos-container > p {
+    flex: 1 33.33%;
+    order: 2;
+    margin: 0
+  }
+
+  .main-photos-container > .photos-placeholder {
+    display: flex;
+    flex: 1 33.33%;
+    order: 3;
+    background-color: white;
+  }
+
+  .photos-container {
+    flex: 1 auto;
+    order: 4;
+  }
+
+
+  /*  CONTACT  */
+  .main-contact-container > section {
+    flex: 1 33.33%;
+    order: 1;
+    margin: 0
+  }
+
+  .contact-detail-container {
+    flex: 1 33.33%;
+    order: 2;
+    /* margin-top: 60px; */
+    display: flex;
+    flex-flow: row wrap
+  }
+
+    .contact-detail-container > * {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+
+    .contact-detail-container > * > img {
+      margin-left: 40px;
+    }
+
+    .contact-detail-container > * > a {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+  .main-contact-container > .contacts-placeholder {
+    display: flex;
+    flex: 1 33.33%;
+    order: 3;
+    background-color: white;
+  }
 }
 
-.header-title-desktop {
-  position: fixed;
-  max-width: 950px;
-  top: 0;   
+@media all and (min-width: 922px) {
+  header h1 {
+    font-size: 58px;
+    letter-spacing: 32px;
+    margin: 10px 0
+  }
 }
-
-.main-nav-scrolled {
-  position: fixed;
-  width: 950px;
-  margin-top: 0;
-}
-
-main {
-  margin-top: 611.45px;
-}
-
-/*
-414 Break Point! 
-576px-Portrait Phones
-768px-Tablets
-922px-Desktops
-1200-Large Desktops */

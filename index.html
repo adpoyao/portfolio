@@ -49,7 +49,7 @@
       <img src="./img/slide1.jpg" class="header-slideshow header-slideshow-mobile">
       <div class="header-captions-mobile">
         <div>
-          <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper</div>        
+          <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper<span class="blinking-cursor">|</span></div>        
           <div class="strike"><i class="fa">&#xf103;</i></div>
         </div>
         <div class="divider-medium"></div>       
@@ -63,8 +63,8 @@
     <div class="header-title-desktop">
       <h1 class="header-logo">EDDIE<span class="less-space"> </span>PO</h1>
       <hr>
-      <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper</div>        
-      <img src="./img/slide1-desktop.png" class="header-slideshow">
+      <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper<span class="blinking-cursor">|</span></div>        
+      <img src="./img/slide1-desktop.png" class="header-slideshow header-slideshow-desktop">
     </div>  
     <nav role="navigation" class="nav-desktop">
       <ul class="nav-list-container">
@@ -86,11 +86,13 @@
       <!-- Main: About -->
       <div class="main-about-container">
         <section class="section-about">about</section>
+        <div class="row-3">
           <img src="./img/self-portrait.png" class="about-self-portrait"></img>
           <h3 class="about-name">Eddie Po Yao</h3>
-          <div class="divider-short"></div>      
-          <p>
-            The ability to create something out of nothing have since forever fascinated me. This affinity for creation is what 
+          <div class="divider-short"></div>  
+        </div>    
+        <div class="row-2">
+          <p>The ability to create something out of nothing have since forever fascinated me. This affinity for creation is what 
             eventually set me off on a path of becoming a full-stack web developer. Being a web developer is almost as if  
             I am casting magic with my fingertips to make this (in the tone of Miranda Priestly) <em>...stuff</em> exist, 
             and within that context is where I find so much passion for what I do.
@@ -105,22 +107,30 @@
             beautiful sceneries in these recent years. 
             <!-- Other times, I teach yoga.  -->
           </p>
+        </div>
       </div>
 
       <!-- Main: Webdev -->
       <div class="main-webdev-container">          
         <section class="section-webdev">webdev</section>
+        <div class="row-2"> 
           <div class="webdev-container">
-            <img class="webdev-placeholder" src="./placeholders/mockup-desktop.png">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="webdev-images">
+                <img class="webdev-placeholder" src="./placeholders/mockup-desktop.png">              
+            </div>
+            <div class="webdev-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
           </div>
+        </div>
       </div>
         
       <!-- Main: Photos -->
       <div class="main-photos-container">          
         <section class="section-photos">photos</section>
         <p class="photos-description">Some photos from my 3 month's backpacking trips across America, Okinawa and Tokyo.</p>
-        <div class="photos-container"></div>
+        <div class="photos-placeholder hidden"></div>
+        <div class="photos-container">
           <div class="photos-row">  
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg"></a>
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg"></a>
@@ -135,7 +145,7 @@
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg"></a>
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg"></a>
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470740/3A8878E9-1A27-4346-B004-52CCA48483E9_fsynwm.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470740/3A8878E9-1A27-4346-B004-52CCA48483E9_fsynwm.jpg"></a>
-         </div> 
+          </div> 
           <div class="photos-row">  
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470746/02668A3B-5EAF-46AB-B632-F72F3664F5A8_p3fv4k.jpg"></a>
             <a href="http://res.cloudinary.com/adpoyao/image/upload/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg" data-lightbox="image-1"><img src="http://res.cloudinary.com/adpoyao/image/upload/c_fill,h_300,w_300/v1511470744/E5930D41-E4C3-4C16-B7E8-EEE135D2B635_otaeaz.jpg"></a>
@@ -147,15 +157,22 @@
       <!-- Main: Contact -->
       <div class="main-contact-container">          
         <section class="section-contact">contact</section>
-          <div class="contact-detail-container">
+        <div class="contact-detail-container">
+          <div class="contact-email"> 
             <img class="icon email-icon" src="./icons/email-icon.png" alt="email icon">
             <a class="contact-detail hidden" href="#">adpoyao@gmail.com</a>
-            <img class="icon linkedin-icon" src="./icons/linkedin-icon.png" alt="linkedin icon">
-            <a class="contact-detail hidden" href="#">linkedin.com/adpoyao</a>
-            <img class="icon github-icon" src="./icons/github-icon.png" alt="github icon">        
-            <a class="contact-detail hidden" href="#">github.com/adpoyao</a>
           </div>
-        </div>       
+          <div class="contact-linkedin">
+              <img class="icon linkedin-icon" src="./icons/linkedin-icon.png" alt="linkedin icon">
+              <a class="contact-detail hidden" href="#">linkedin.com/adpoyao</a>
+          </div>
+          <div class="contact-github">
+              <img class="icon github-icon" src="./icons/github-icon.png" alt="github icon">        
+              <a class="contact-detail hidden" href="#">github.com/adpoyao</a>
+          </div>        
+        </div>
+        <div class="contacts-placeholder hidden"></div> 
+      </div>
     </div>
   </main>
 
