@@ -4,7 +4,7 @@
 const mainNav = $('.nav-desktop');
 const mainSlideshow = $('.header-slideshow-desktop');
 $(window).scroll(function() {
-  if ( $(this).scrollTop() > 550 ) {
+  if ( $(this).scrollTop() > 528 ) {
     mainNav.addClass('main-nav-scrolled');
     mainSlideshow.addClass('hidden');
   }
@@ -46,14 +46,15 @@ $('a[href*="#"]')
           // Must change focus!
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(':focus')) { // Checking if the target was focused
             return false;
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-          };
+          }
         });
       }
     }
   });
 
+//SLIDE TEXTS

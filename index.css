@@ -485,7 +485,7 @@ footer {
   }
 
   nav {
-    margin: 550px 0 -611.45px 0 ;
+    margin: 528px 0 -589.45px 0 ;
     border-bottom: 1px solid rgb(151, 151, 151);
     z-index: 150;
   }
@@ -496,6 +496,7 @@ footer {
     justify-content: space-around;
     font-weight: bold;
     margin: 25px 0 10px 0;
+    /* margin: 20px 0 15px 0 */
   }
 
   .header-title-desktop {
@@ -509,13 +510,17 @@ footer {
   }
   
   .main-nav-scrolled {
-    position: fixed;
+    /* position: fixed;
     width: 950px;
-    margin-top: 0;
+    margin-top: 0 */
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 3%;
   }
   
   main {
-    margin-top: 611.45px;
+    margin-top: 589.45px;
   }
 
   section {
@@ -668,8 +673,19 @@ footer {
     left: 0;    */
     margin-right: auto;
     margin-left: auto;
+    max-width: 936.59px
   }
 }
 
+@media all and (min-width: 1112px) {
+  .header-title-desktop {
+    max-width: 950px
+  }
 
-
+  .main-nav-scrolled {
+    left: auto;
+    right: auto;
+    position: fixed;
+    width: 950px;
+    margin: 0
+}
