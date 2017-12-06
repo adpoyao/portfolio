@@ -462,12 +462,6 @@ footer {
     text-align: right
   }
 
-  .header-title-desktop
-  /* nav  */
-  {
-    padding-right: 3%
-  }
-
   .header-caption  {
     letter-spacing: 5px;
   }
@@ -507,8 +501,11 @@ footer {
   .header-title-desktop {
     position: fixed;
     max-width: 950px;
-    top: 0;   
-    padding-right: 3%
+    top: 0;
+    right: 0;
+    left: 0;   
+    margin-right: 3%;
+    margin-left: 3%;
   }
   
   .main-nav-scrolled {
@@ -662,8 +659,17 @@ footer {
   
 }
 
-@media all and (min-width: 980px) {
-  .header {
+@media all and (min-width: 1010px) {
+  .header-title-desktop {
+    /* position: fixed;
+    max-width: 950px;
+    top: 0;
+    right: 0;
+    left: 0;    */
+    margin-right: auto;
+    margin-left: auto;
   }
 }
+
+
 
