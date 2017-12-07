@@ -199,6 +199,10 @@ header h1 {
   align-items: flex-start; 
 }
 
+.header-slideshow-mobile {
+  margin-top: -30px 
+}
+
 .header-caption  {
   letter-spacing: 3px;
   font-style: italic;
