@@ -502,11 +502,9 @@ footer {
   .header-title-desktop {
     position: fixed;
     max-width: 950px;
-    top: 0;
-    right: 0;
-    left: 0;   
+    top: 0; 
     margin-right: 3%;
-    margin-left: 3%;
+    /* margin-left: 3%; */
   }
   
   .main-nav-scrolled {
@@ -665,27 +663,23 @@ footer {
 }
 
 @media all and (min-width: 1010px) {
-  .header-title-desktop {
-    /* position: fixed;
-    max-width: 950px;
-    top: 0;
-    right: 0;
-    left: 0;    */
+  /* .header-title-desktop {
     margin-right: auto;
     margin-left: auto;
-    max-width: 936.59px
-  }
-}
-
-@media all and (min-width: 1112px) {
-  .header-title-desktop {
-    max-width: 950px
-  }
+  } */
 
   .main-nav-scrolled {
-    left: auto;
+    /* left: auto;
     right: auto;
-    position: fixed;
-    width: 950px;
-    margin: 0
+    position: fixed; */
+    max-width: 950px;
+    margin: 0 auto
+  }
 }
+
+/* @media all and (min-width: 1126px) {
+  .header-title-desktop {
+    margin-right: auto !important;
+    margin-left: auto !important
+  }
+} */
