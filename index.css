@@ -270,7 +270,7 @@ section {
 }
 
 .photos-description {
-  text-align: center
+  /* text-align: center */
 }
 
 .photos-placeholder {
@@ -544,13 +544,13 @@ footer {
 
   /*  ABOUT  */
   .main-about-container,
-  .main-webdev-container,
   .main-contact-container {
     flex-flow: row nowrap;
     justify-content: space-between;
     margin: 80px 0 30px
   }
 
+  .main-webdev-container,  
   .main-photos-container {
     flex-flow: row wrap;
     justify-content: space-between;
@@ -579,15 +579,13 @@ footer {
 
 
   /*  WEBDEV  */
-  .main-about-container > section {
+  .main-webdev-container > section,
+  .main-webdev-container .section-divider {
     flex: 1 33.33%;
-    order: 1;
   }
 
-  .main-about-container > .row-2 {
-    flex: 1 33.33%;
-    order: 2;
-    margin-right: 4%;
+  .main-webdev-container .project {
+    flex: 1 66.66%;
   }
 
 
