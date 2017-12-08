@@ -260,7 +260,8 @@ section {
   text-align: center;
 }
 
-.fa-angle-double-right {
+.fa-angle-double-right,
+.fa-angle-double-left {
   color: tomato
 }
 
