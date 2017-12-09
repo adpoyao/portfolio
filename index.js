@@ -92,34 +92,35 @@ $(document).ready(function(){
 });
 
 
-//FADE: WD-1
+//FADE: PROJECT 1
 $(document).ready(function(){
-  $('.divs div').each(function(e) {
+  $('.project-1 div').each(function(e) {
     if (e !== 0)
       $(this).hide();
   });
   
-  $('#next').click(function(){
-    if ($('.divs div:visible').next().length !== 0)
-      $('.divs div:visible').fadeOut(function(){
+  $('#next-project-1').click(function(){
+    if ($('.project-1 div:visible').next().length !== 0)
+      $('.project-1 div:visible').fadeOut(function(){
         $(this).next().fadeIn();
+        console.log($(this).next());
       });
     else {
-      $('.divs div:visible').fadeOut(function(){
+      $('.project-1 div:visible').fadeOut(function(){
         $('.divs div:first').fadeIn();
       });
     }
     return false;
   });
 
-  $('#prev').click(function(){
-    if ($('.divs div:visible').prev().length !== 0)
-      $('.divs div:visible').fadeOut(function(){
+  $('#prev-project-1').click(function(){
+    if ($('.project-1 div:visible').prev().length !== 0)
+      $('.project-1 div:visible').fadeOut(function(){
         $(this).prev().fadeIn();
       });
     else {
-      $('.divs div:visible').fadeOut(function(){
-        $('.divs div:last').fadeIn();
+      $('.project-1 div:visible').fadeOut(function(){
+        $('.project-1 div:last').fadeIn();
       });
     }
     return false;

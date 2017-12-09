@@ -261,12 +261,22 @@ section {
 }
 
 .fa-angle-double-right,
-.fa-angle-double-left {
+.fa-angle-double-left,
+.fa-angle-double-up {
   color: tomato
 }
 
 .webdev-placeholder {
   width: 100%;
+}
+
+.learn-more {
+  padding-bottom: 50px;
+}
+
+.divider-project {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .photos-description {
@@ -581,12 +591,22 @@ footer {
   /*  WEBDEV  */
   .main-webdev-container > section,
   .main-webdev-container .section-divider {
-    flex: 1 33.33%;
+    flex: 1 30%;
   }
 
   .main-webdev-container .project {
     flex: 1 66.66%;
   }
+
+  /* DIFFERENT WEBDEV VIEW */
+  /* .webdev-container {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  .webdev-container > * {
+    flex: 1 50%;
+  } */
 
 
   /*  PHOTOS  */
