@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="index.css">
   <link href="./lightbox/lightbox.css" rel="stylesheet">  
   <link href="https://fonts.googleapis.com/css?family=Quattrocento|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>  
 </head>
@@ -99,7 +100,7 @@
         <div class="row-3 divs">
           <div class="cls1">
             <img src="./img/self-portrait.png" class="about-self-portrait"></img>
-            <h3 class="about-name">Eddie Po Yao <span> </span> <a id="next"><i class="fa fa-angle-double-right"></i></a></h3>
+            <h3 class="about-name">Eddie Po Yao <span> </span> <a id="next" href="#about"><i class="fa fa-angle-double-right"></i></a></h3>
             <p class="divider-short"></p>  
           </div>
           <div class="cls2">
@@ -132,6 +133,7 @@
         
         <!-- PROJECT 1 -->        
         <div class="project">
+          <h4>Text To Speech Translation App</h4>
           <div class="webdev-container">
             <div class="webdev-images">
                 <img class="webdev-placeholder" src="./placeholders/translate-cover.png">              
@@ -147,9 +149,53 @@
             </div>
             <div class="cls2">
               <aside class="webdev-container">
+                <aside class="devicon-wrapper">
+                    <ul class="devicon">
+                      <li>
+                        <i class="devicon-html5-plain colored"></i>                    
+                        <aside class="icon-caption">HTML</aside>
+                      </li>
+                      <li>  
+                        <i class="devicon-css3-plain colored"></i>
+                        <aside class="icon-caption">CSS</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-javascript-plain colored"></i>                                        
+                        <aside class="icon-caption">JavaScript</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-jquery-plain colored"></i>
+                        <aside class="icon-caption">JQuery</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-nodejs-plain colored"></i>                      
+                        <aside class="icon-caption">NodeJS</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-express-original colored"></i>
+                        <aside class="icon-caption">Express</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-mongodb-plain colored"></i>  
+                        <aside class="icon-caption">Mongo</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-travis-plain colored"></i>  
+                        <aside class="icon-caption">Travis</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-heroku-plain colored"></i>                            
+                        <aside class="icon-caption">Heroku</aside>                          
+                      </li>  
+                      <li>
+                        <i class="devicon-mocha-plain colored"></i>  
+                        <aside class="icon-caption">Mocha</aside>                          
+                      </li>
+                    </ul>
+                  </aside>
                 <aside class="webdev-images">
-                    <img class="webdev-placeholder" src="./placeholders/translate-combined.png">              
-                </aside>
+                    <img class="webdev-placeholder webdev-combined-picture" src="./placeholders/translate-combined.png">              
+                </aside>                
                 <aside class="webdev-description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a id="prev-project-1" href="#project-1"><i class="fa fa-angle-double-up"></i></a></p>
                     <p class="divider-short divider-project"></p>                    
@@ -159,54 +205,145 @@
           </div>
         </div>
         
-        <div class="section-divider"></div>
-        <!-- PROJECT 2 -->
-        <div class="divs-web-2 project project-2">
-          <div class="cls1">
-            <div class="row-2"> 
-                <div class="webdev-container">
-                  <div class="webdev-images">
-                      <img class="webdev-placeholder" src="./placeholders/subscribr-cover.png">              
-                  </div>
-                  <div class="webdev-description">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  </div>
-                </div>
-              </div>
+        <div id="project-2" class="section-divider anchor project-2"></div>
+        <!-- PROJECT 2 -->        
+        <div class="project">
+          <h4>Subscribr App</h4>                         
+          <div class="webdev-container">
+            <div class="webdev-images">
+                <img class="webdev-placeholder" src="./placeholders/subscribr-cover.png">              
             </div>
+            <div class="webdev-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
 
-          <div class="cls2">
-            <div class="row-2"> 
-              <div class="webdev-container">
-                <div class="webdev-images">
-                    <img class="webdev-placeholder" src="./placeholders/subscribr-combined.png">              
-                </div>
-                <div class="webdev-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
+          <div class="learn-more project-2">
+            <div class="cls1"> 
+                <p> <a id="next-project-2" class="learn-more">Learn more <i class="fa fa-angle-double-right"></i></a> </p>
+            </div>
+            <div class="cls2">
+              <aside class="webdev-container">
+                <aside class="devicon-wrapper">
+                    <ul class="devicon">
+                      <li>
+                        <i class="devicon-react-original colored"></i>  
+                        <aside class="icon-caption">React/redux</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-html5-plain colored"></i>                    
+                        <aside class="icon-caption">HTML</aside>
+                      </li>
+                      <li>  
+                        <i class="devicon-css3-plain colored"></i>
+                        <aside class="icon-caption">CSS</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-javascript-plain colored"></i>                                        
+                        <aside class="icon-caption">JavaScript</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-nodejs-plain colored"></i>                      
+                        <aside class="icon-caption">NodeJS</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-express-original colored"></i>
+                        <aside class="icon-caption">Express</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <aside class="icon-caption">PostgreSQL</aside>                          
+                      </li>
+                    </ul>
+                  </aside>
+                <aside class="webdev-images">
+                    <img class="webdev-placeholder webdev-combined-picture" src="./placeholders/subscribr-combined.png">              
+                </aside>
+                <aside class="webdev-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a id="prev-project-2" href="#project-2"><i class="fa fa-angle-double-up"></i></a></p>
+                    <p class="divider-short divider-project"></p>                    
+                </aside>
+              </aside>
             </div>
           </div>
         </div>
 
-        <div class="section-divider"></div>        
-        <!-- PROJECT 3 -->
-        <div class="divs-web-3 project project-3">
-          <div class="cls1">
-            <div class="row-2"> 
-              <div class="webdev-container">
-                <div class="webdev-images">
-                    <img class="webdev-placeholder" src="./placeholders/mockup-desktop.png">              
-                </div>
-                <div class="webdev-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
+        <div id="project-3" class="section-divider anchor project-3"></div>        
+        <!-- PROJECT 3 -->        
+        <div class="project">
+          <h4>Placeholder App</h4>                                     
+          <div class="webdev-container">
+            <div class="webdev-images">
+                <img class="webdev-placeholder" src="./placeholders/mockup-desktop.png">              
+            </div>
+            <div class="webdev-description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
 
-          <div class="cls2"></div>
+          <div class="learn-more project-3">
+            <div class="cls1"> 
+                <p> <a id="next-project-3" class="learn-more">Learn more <i class="fa fa-angle-double-right"></i></a> </p>
+                <p class="divider-short"></p>                                    
+              </div>
+            <div class="cls2">
+              <aside class="webdev-container">
+                <aside class="devicon-wrapper">
+                    <ul class="devicon">
+                      <li>
+                        <i class="devicon-html5-plain colored"></i>                    
+                        <aside class="icon-caption">HTML</aside>
+                      </li>
+                      <li>  
+                        <i class="devicon-css3-plain colored"></i>
+                        <aside class="icon-caption">CSS</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-javascript-plain colored"></i>                                        
+                        <aside class="icon-caption">JavaScript</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-jquery-plain colored"></i>
+                        <aside class="icon-caption">JQuery</aside>
+                      </li>
+                      <li>
+                        <i class="devicon-nodejs-plain colored"></i>                      
+                        <aside class="icon-caption">NodeJS</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-express-original colored"></i>
+                        <aside class="icon-caption">Express</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-mongodb-plain colored"></i>  
+                        <aside class="icon-caption">Mongo</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-travis-plain colored"></i>  
+                        <aside class="icon-caption">Travis</aside>                          
+                      </li>
+                      <li>
+                        <i class="devicon-heroku-plain colored"></i>                            
+                        <aside class="icon-caption">Heroku</aside>                          
+                      </li>  
+                      <li>
+                        <i class="devicon-mocha-plain colored"></i>  
+                        <aside class="icon-caption">Mocha</aside>                          
+                      </li>
+                    </ul>
+                  </aside>
+                <aside class="webdev-images">
+                    <img class="webdev-placeholder webdev-combined-picture" src="./placeholders/mockup-desktop.png">              
+                </aside>
+                <aside class="webdev-description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a id="prev-project-3" href="#project-3"><i class="fa fa-angle-double-up"></i></a></p>
+                    <p class="divider-short divider-project"></p>                    
+                </aside>
+              </aside>
+            </div>
+          </div>
         </div>
+      
       </div>
         
       <div id="photos" class="anchor photos"></div>      

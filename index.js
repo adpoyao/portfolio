@@ -126,3 +126,73 @@ $(document).ready(function(){
     return false;
   });
 });
+
+//FADE: PROJECT 2
+$(document).ready(function(){
+  $('.project-2 div').each(function(e) {
+    if (e !== 0)
+      $(this).hide();
+  });
+  
+  $('#next-project-2').click(function(){
+    if ($('.project-2 div:visible').next().length !== 0)
+      $('.project-2 div:visible').fadeOut(function(){
+        $(this).next().fadeIn();
+        console.log($(this).next());
+      });
+    else {
+      $('.project-2 div:visible').fadeOut(function(){
+        $('.divs div:first').fadeIn();
+      });
+    }
+    return false;
+  });
+
+  $('#prev-project-2').click(function(){
+    if ($('.project-2 div:visible').prev().length !== 0)
+      $('.project-2 div:visible').fadeOut(function(){
+        $(this).prev().fadeIn();
+      });
+    else {
+      $('.project-2 div:visible').fadeOut(function(){
+        $('.project-2 div:last').fadeIn();
+      });
+    }
+    return false;
+  });
+});
+
+//FADE: PROJECT 3
+$(document).ready(function(){
+  $('.project-3 div').each(function(e) {
+    if (e !== 0)
+      $(this).hide();
+  });
+  
+  $('#next-project-3').click(function(){
+    if ($('.project-3 div:visible').next().length !== 0)
+      $('.project-3 div:visible').fadeOut(function(){
+        $(this).next().fadeIn();
+        console.log($(this).next());
+      });
+    else {
+      $('.project-3 div:visible').fadeOut(function(){
+        $('.divs div:first').fadeIn();
+      });
+    }
+    return false;
+  });
+
+  $('#prev-project-3').click(function(){
+    if ($('.project-3 div:visible').prev().length !== 0)
+      $('.project-3 div:visible').fadeOut(function(){
+        $(this).prev().fadeIn();
+      });
+    else {
+      $('.project-3 div:visible').fadeOut(function(){
+        $('.project-3 div:last').fadeIn();
+      });
+    }
+    return false;
+  });
+});
