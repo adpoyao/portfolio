@@ -264,6 +264,10 @@ section {
   text-align: left;
 }
 
+.about-name-mobile {
+  text-align: center;
+}
+
 .more-mobile {
   font-weight: normal;
 }
@@ -310,8 +314,7 @@ section {
   display: flex;
   flex-flow: row wrap;
   border-bottom: 1px solid rgb(216,216,216);
-  border-top: 1px solid rgb(216,216,216);
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 .devicon > * {
@@ -320,12 +323,8 @@ section {
   padding-top: 0;
 }
 
-.devicon > * > aside {
-  display: none;
-}
-
 .devicon > * > i {
-  font-size: 2em;
+  font-size: 1.6em;
   margin: 0 15px;    
 }
 
@@ -487,30 +486,6 @@ footer {
     display: none
   }
 
-/* BEGIN FILE CODE */
-  .about-self-portrait-desktop {
-    display: flex;
-  }
-
-  .more-desktop {
-    display: inline;
-    font-weight: normal;
-  }
-
-  .webdev-placeholder {
-    width: 100%;
-  }
-
-  .about-name {
-    text-align: center;
-  }
-
-  .kira-kira {
-    max-width: 100%;
-  }
-
-/* END FILE CODE */
-
   body {
     padding-left: 3%;
     padding-right: 3%;
@@ -671,6 +646,26 @@ footer {
     order: 3;
   }
 
+  .about-self-portrait-desktop {
+    display: flex;
+  }
+
+  .more-desktop {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .about-name {
+    text-align: center;
+  }
+
+  .webdev-placeholder {
+    width: 100%;
+  }
+
+  .kira-kira {
+    max-width: 100%;
+  }
 
   /*  WEBDEV  */
   .main-webdev-container > section,
@@ -692,19 +687,16 @@ footer {
   }
 
   .devicon {
-    flex-flow: row nowrap;
-    border-bottom: none;
-    border-top: none;
+    flex-flow: row wrap;
   }
 
   .devicon > * > aside {
     display: block;
   }
 
-  .devicon > * {
-    border-bottom: 1px rgb(216,216,216) solid;
-    padding-bottom: 0;
-    padding-top: 0;
+  .devicon > * > i {
+    font-size: 2em;
+    margin: 0 15px;    
   }
 
   /* DIFFERENT WEBDEV VIEW */
