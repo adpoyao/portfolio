@@ -261,7 +261,17 @@ section {
 }
 
 .about-name {
-  text-align: center;
+  text-align: left;
+}
+
+.more-mobile {
+  font-weight: normal;
+}
+
+.cls2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center
 }
 
 .fa-angle-double-right,
@@ -272,6 +282,10 @@ section {
 
 .webdev-placeholder {
   width: 100%;
+}
+
+.kira-kira {
+  max-width: 50%;
 }
 
 .learn-more {
@@ -287,16 +301,6 @@ section {
   margin-top: 30px;
 }
 
-
-/* h4 {
-  line-height: 100%;
-  margin: 0 0 20px 0;
-  font-size: 1.4em;
-  font-family: 'Playfair Display';
-  letter-spacing: 1px;
-  color: grey;  
-}
-
 .devicon-wrapper {
   display: flex;
   justify-content: center;
@@ -304,10 +308,20 @@ section {
 
 .devicon {
   display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid rgb(216,216,216);
+  border-top: 1px solid rgb(216,216,216);
+  padding-top: 15px;
 }
 
 .devicon > * {
-  border-bottom: 1px rgb(216,216,216) solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-top: 0;
+}
+
+.devicon > * > aside {
+  display: none;
 }
 
 .devicon > * > i {
@@ -318,7 +332,7 @@ section {
 .icon-caption {
   font-size: 0.8em;
   text-align: center;
-} */
+}
 
 .photos-description {
   /* text-align: center */
@@ -376,7 +390,10 @@ footer {
 }
 
 /* HIDE */
-.header-desktop {
+.header-desktop,
+.about-name-desktop,
+.about-self-portrait-desktop,
+.more-desktop {
   display: none
 }
 
@@ -464,9 +481,35 @@ footer {
   .hamburger,
   .cross,
   .header-container,
-  .header-mobile {
+  .header-mobile,
+  .more-mobile,
+  .about-self-portrait-mobile {
     display: none
   }
+
+/* BEGIN FILE CODE */
+  .about-self-portrait-desktop {
+    display: flex;
+  }
+
+  .more-desktop {
+    display: inline;
+    font-weight: normal;
+  }
+
+  .webdev-placeholder {
+    width: 100%;
+  }
+
+  .about-name {
+    text-align: center;
+  }
+
+  .kira-kira {
+    max-width: 100%;
+  }
+
+/* END FILE CODE */
 
   body {
     padding-left: 3%;
@@ -648,27 +691,20 @@ footer {
     color: grey;  
   }
 
-  .devicon-wrapper {
-    display: flex;
-    justify-content: center;
+  .devicon {
+    flex-flow: row nowrap;
+    border-bottom: none;
+    border-top: none;
   }
 
-  .devicon {
-    display: flex;
+  .devicon > * > aside {
+    display: block;
   }
 
   .devicon > * {
     border-bottom: 1px rgb(216,216,216) solid;
-  }
-
-  .devicon > * > i {
-    font-size: 2em;
-    margin: 0 15px;    
-  }
-
-  .icon-caption {
-    font-size: 0.8em;
-    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   /* DIFFERENT WEBDEV VIEW */
