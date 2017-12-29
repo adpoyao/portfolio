@@ -293,6 +293,10 @@ section {
   padding-bottom: 20px;
 }
 
+.kira-kira-2 {
+  display: none;
+}
+
 .learn-more {
   padding-bottom: 50px;
 }
@@ -343,6 +347,8 @@ section {
 
 .photos-description {
   /* text-align: center */
+  margin-left: 14%;
+  margin-right: 14%
 }
 
 .photos-placeholder {
@@ -795,6 +801,12 @@ footer {
   }
 }
 
+@media all and (min-width: 866px) {
+  .disappearing-child-866 {
+    display: none
+  }
+}
+
 @media all and (min-width: 922px) {
   header h1 {
     font-size: 58px;
@@ -803,11 +815,6 @@ footer {
   } 
 }
 
-@media all and (min-width: 866px) {
-  .disappearing-child-948 {
-    display: none
-  }
-}
 
 @media all and (min-width: 1010px) {
   /* .header-title-desktop {
