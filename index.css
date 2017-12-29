@@ -290,6 +290,7 @@ section {
 
 .kira-kira {
   max-width: 50%;
+  padding-bottom: 20px;
 }
 
 .learn-more {
@@ -315,12 +316,19 @@ section {
   flex-flow: row wrap;
   border-bottom: 1px solid rgb(216,216,216);
   /* padding-top: 15px; */
+  justify-content: space-around
 }
 
 .devicon > * {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-top: 0;
+  max-width: 55.61px
+}
+
+.filling-empty-space-childs {
+  width: 55.61px;
+  height: 0;
 }
 
 .devicon > * > i {
@@ -465,6 +473,12 @@ footer {
     position: absolute;
     top: 19px;
     right: 13%
+  }
+}
+
+@media all and (min-width: 600px) {
+  .disappearing-child-600 {
+    display: none
   }
 }
 
@@ -665,6 +679,7 @@ footer {
 
   .kira-kira {
     max-width: 100%;
+    border-bottom: 0;
   }
 
   /*  WEBDEV  */
@@ -782,8 +797,13 @@ footer {
     font-size: 58px;
     letter-spacing: 32px;
     margin: 10px 0
+  } 
+}
+
+@media all and (min-width: 866px) {
+  .disappearing-child-948 {
+    display: none
   }
-  
 }
 
 @media all and (min-width: 1010px) {
