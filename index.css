@@ -641,7 +641,7 @@ footer {
   }
 
   .main-about-container > section {
-    flex: 1 33.33%;
+    flex: 1 33%;
     order: 1;
   }
 
@@ -727,11 +727,14 @@ footer {
 
   /*  PHOTOS  */
   .main-photos-container > section {
-    flex: 1 33.33%;
+    flex: 1 31%;
     order: 1;
     margin: 0
   }
 
+  .kira-kira-2 {
+    margin-top: -50px;
+  }
   .main-photos-container > p {
     flex: 1 33.33%;
     order: 2;
