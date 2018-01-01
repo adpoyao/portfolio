@@ -196,3 +196,15 @@ $(document).ready(function(){
     return false;
   });
 });
+
+
+//TOGGLE BETWEEN PHOTO PAGES
+$('.go-to-page-1').on('click', event => {
+  $('.photo-part-2').addClass('hidden');
+  $('.photo-part-1').removeClass('hidden');
+});
+
+$('.go-to-page-2').on('click', event => {
+  $('.photo-part-1').addClass('hidden');
+  $('.photo-part-2').removeClass('hidden');
+});
