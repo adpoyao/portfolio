@@ -830,10 +830,6 @@ footer {
       justify-content: center;
     }
 
-    .contact-first-child {
-      margin-top: -30px
-    }
-
     .contact-detail-container > * > a {
       display: flex;
       margin-bottom: 30px
