@@ -346,7 +346,6 @@ section {
 }
 
 .photos-description {
-  /* text-align: center */
   margin-left: 14%;
   margin-right: 14%
 }
@@ -362,8 +361,8 @@ section {
   flex: 1 100%;
   order: 3;
   justify-content: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .photos-menu-divider {
@@ -376,21 +375,25 @@ section {
   letter-spacing: 1px;
   color: grey;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.photo-part-2 {
+  margin-top: 50px
 }
 
 a.anchor {
   display: block;
   position: relative;
-  top: -7px;
+  top: -20px;
   visibility: hidden;
 }
 
 a.anchor-2 {
   display: block;
   position: relative;
-  top: -108px;
+  top: -99px;
   visibility: hidden;
 }
 
@@ -798,11 +801,11 @@ footer {
   }
 
   a.anchor {
-    top: 133px;
+    top: 108px;
   }
   
   a.anchor-2 {
-    top: -70px;
+    top: -61px;
   }
 
   /*  CONTACT  */
@@ -827,11 +830,20 @@ footer {
       justify-content: center;
     }
 
-    .contact-detail-container > * > img {
-      margin-left: 40px;
+    .contact-first-child {
+      margin-top: -30px
     }
 
     .contact-detail-container > * > a {
+      display: flex;
+      margin-bottom: 30px
+    }
+
+    .contact-detail-container > * > a > img {
+      margin-left: 40px;
+    }
+
+    .contact-detail-container > * > a > p {
       display: flex;
       align-items: center;
       margin-left: 15px;
