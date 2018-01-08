@@ -340,6 +340,10 @@ section {
   margin: 0 15px;    
 }
 
+.github-demo {
+  text-align: center;
+}
+
 .icon-caption {
   font-size: 0.8em;
   text-align: center;
