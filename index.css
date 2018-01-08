@@ -98,6 +98,11 @@ a {
 
 a:hover {
   cursor: pointer;
+  color: tomato
+}
+
+.black-hover:hover {
+  color: black
 }
 
 /* NAV */
@@ -347,14 +352,14 @@ section {
 a.anchor-project {
   display: block;
   position: relative;
-  top: 230px;
+  top: 130px;
   visibility: hidden;
 }
 
 a.anchor-project-2 {
   display: block;
   position: relative;
-  top: 160px;
+  top: 80px;
   visibility: hidden;
 }
 
@@ -776,6 +781,14 @@ footer {
   .devicon > * > i {
     font-size: 2em;
     margin: 0 15px;    
+  }
+
+  a.anchor-project {
+    top: 230px;
+  }
+  
+  a.anchor-project-2 {
+    top: 160px;
   }
 
   /* DIFFERENT WEBDEV VIEW */
