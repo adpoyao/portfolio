@@ -344,6 +344,20 @@ section {
   text-align: center;
 }
 
+a.anchor-project {
+  display: block;
+  position: relative;
+  top: 230px;
+  visibility: hidden;
+}
+
+a.anchor-project-2 {
+  display: block;
+  position: relative;
+  top: 160px;
+  visibility: hidden;
+}
+
 .icon-caption {
   font-size: 0.8em;
   text-align: center;
