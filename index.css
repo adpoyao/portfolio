@@ -565,7 +565,7 @@ a.anchor-2 {
     font-weight: 400px;
     
     line-height: 40px;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     letter-spacing: 1px;
   }
 
@@ -610,7 +610,6 @@ a.anchor-2 {
   .work-history,
   .other-repos {
     line-height: 10px;
-    font-size: 0.9em;
   }
 
 footer {
