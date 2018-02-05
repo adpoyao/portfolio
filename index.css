@@ -520,7 +520,7 @@ a.anchor-2 {
     flex-flow: column nowrap;
     height: 300px;
     padding-left: 14.5%;
-    padding-right: 3%;
+    padding-right: 10%;
     width: 100%;
   }
 
@@ -559,7 +559,7 @@ a.anchor-2 {
     font-weight: 400;
     margin-left: -15px;
 
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .contact-link {
