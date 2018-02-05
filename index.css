@@ -538,6 +538,8 @@ a.anchor-2 {
     font-size: 1.6em;
     letter-spacing: 14px; 
     margin: 0;
+
+    display: none;
   }  
 
   .contact-left-column > * {
@@ -553,9 +555,11 @@ a.anchor-2 {
   }
 
   .email-address {
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     font-weight: 400;
     margin-left: -15px;
+
+    font-size: 0.8em;
   }
 
   .contact-link {
@@ -589,6 +593,8 @@ a.anchor-2 {
     flex: 1 50%;
     padding-right: 20px;
     font-size: 0.8em;
+
+    font-size: 0.7em;
   }
 
   .work-repo-ul {
@@ -610,6 +616,7 @@ a.anchor-2 {
   .work-history,
   .other-repos {
     line-height: 10px;
+    font-size: 0.9em;
   }
 
 footer {
