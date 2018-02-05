@@ -1,5 +1,10 @@
 'use strict';
 
+// FADE IN INTRO PICTURE (DESKTOP VIEW)
+function fadeIn(obj) {
+  $(obj).hide().fadeIn(2000);
+}
+
 //LOCK NAV BAR WHEN SCROLLING
 const mainNav = $('.nav-desktop');
 const mainSlideshow = $('.header-slideshow-desktop');
@@ -13,11 +18,6 @@ $(window).scroll(function() {
     mainSlideshow.removeClass('hidden');
   }
 });
-
-// //FADE IN INTRO PICTURE (DESKTOP VIEW)
-// function fadeIn(obj) {
-//   $(obj).fadeIn(2000);
-// }
 
 //SEAMLESS TRANSITION TO #LINKS
 // Select all links with hashes
@@ -103,7 +103,6 @@ $(document).ready(function(){
     if ($('.project-1 div:visible').next().length !== 0)
       $('.project-1 div:visible').fadeOut(function(){
         $(this).next().fadeIn();
-        console.log($(this).next());
       });
     else {
       $('.project-1 div:visible').fadeOut(function(){
@@ -138,7 +137,6 @@ $(document).ready(function(){
     if ($('.project-2 div:visible').next().length !== 0)
       $('.project-2 div:visible').fadeOut(function(){
         $(this).next().fadeIn();
-        console.log($(this).next());
       });
     else {
       $('.project-2 div:visible').fadeOut(function(){
@@ -173,7 +171,6 @@ $(document).ready(function(){
     if ($('.project-3 div:visible').next().length !== 0)
       $('.project-3 div:visible').fadeOut(function(){
         $(this).next().fadeIn();
-        console.log($(this).next());
       });
     else {
       $('.project-3 div:visible').fadeOut(function(){

@@ -17,7 +17,7 @@
 
 <script>
   window.fadeIn = function(obj) {
-      $(obj).fadeIn(2000);
+      $(obj).hide().fadeIn(2000);
   }
 </script>
 
@@ -55,10 +55,10 @@
 
     <!-- Mobile Menue: Captions -->
     <div class="header-title-mobile">
-      <img src="./img/slide1.jpg" class="header-slideshow header-slideshow-mobile">
+      <img src="./img/title-img-mobile.jpg" class="header-slideshow header-slideshow-mobile">
       <div class="header-captions-mobile">
         <div>
-          <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper<span class="blinking-cursor">|</span></div>        
+          <div class="header-caption"><span>jr</span> full stack developer<span class="blinking-cursor">|</span></div>        
           <div class="strike"><i class="fa">&#xf103;</i></div>
         </div>
         <div class="divider-medium"></div>       
@@ -71,17 +71,17 @@
   <div class="header-desktop">
     <div class="header-title-desktop">
       <h1 class="header-logo">EDDIE<span class="less-space"> </span>PO</h1>
-      <hr>
-      <div class="header-caption"><span>f</span>ull <span>s</span>tack <span>d</span>eveloper<span class="blinking-cursor">|</span></div>        
-      <img id="preload" onload="fadeIn(this)" src="./img/slide1-desktop.png" class="header-slideshow header-slideshow-desktop" style="display:flex;">
+      <hr class="desktop-header-line">
+      <div class="header-caption"><span>jr</span> full stack developer<span class="blinking-cursor">|</span></div>        
+      <img id="preload" onload="fadeIn(this)" src="./img/title-img-desktop.png" class="header-slideshow header-slideshow-desktop" style="display:none;">
     </div>  
     <nav role="navigation" class="nav-desktop">
       <ul class="nav-list-container">
-        <li><a href="#home" class="black-hover">home</a></li>
-        <li><a href="#about" class="black-hover">about</a></li>
-        <li><a href="#webdev" class="black-hover">webdev</a></li>
-        <li><a href="#photos" class="black-hover">photos</a></li>
-        <li><a href="#contact" class="black-hover">contact</a></li>
+        <li><a href="#home" class="black-hover nav-link-dt">home</a></li>
+        <li><a href="#about" class="black-hover nav-link-dt">about</a></li>
+        <li><a href="#webdev" class="black-hover nav-link-dt">webdev</a></li>
+        <li><a href="#photos" class="black-hover nav-link-dt">photos</a></li>
+        <li><a href="#contact" class="black-hover nav-link-dt">contact</a></li>
       </ul>
     </nav>
   </div>
@@ -115,7 +115,7 @@
         <div class="row-3 divs">
           <div class="cls1">
             <img src="./img/self-portrait.png" class="about-self-portrait about-self-portrait-desktop"></img>
-            <h3 class="about-name"><a id="next" class="black-hover"><span class="more-mobile">Read more </span><span class="more-desktop">Eddie Po Yao </span><i class="fa fa-angle-double-right"></i></a></h3>
+            <h3 class="about-name"><a id="next" class="black-hover name-hover"><span class="more-mobile">Read more </span><span class="more-desktop">Eddie Po Yao </span><i class="fa fa-angle-double-right"></i></a></h3>
             <p class="divider-short"></p>  
           </div>
 
@@ -147,7 +147,7 @@
                 <img class="webdev-placeholder" src="./placeholders/translate-cover.png">              
             </div>
             <div class="webdev-description">
-                <p>The Text to Speech Translation app allows users to translate english text input to a selected language - both written and speech outputs. With authentications, users can manage their own repository of saved vocabularies and phrases for customized travel / communication aid; or simply practicing a foreign language (think flashcards). This version currently supports the following output languages: Spanish, French, German, Portuguese, and Italian.</p>
+                <p>The Text to Speech Translation app allows users to translate English text input to another language - both written and speech outputs. With authentications, users can manage their own repository of saved vocabularies and phrases for customized travel / communication aid, or simply to practice a foreign language (think flashcards). This version currently supports the following language output: Spanish, French, German, Portuguese, and Italian.</p>
             </div>
           </div>
 
@@ -214,7 +214,7 @@
                 </aside>                
                 <aside class="webdev-description">
                     <p class="github-demo"> <a href="https://github.com/Thinkful-C15/capstone-translation-app" target="_blank">GitHub</a><span class="photos-menu-divider">&nbsp;&nbsp;|&nbsp; </span><a href="https://text-to-speech-translation-app.herokuapp.com/" target="_blank">Live Demo</a></p>
-                    <p>Powered by IBM Watson's API. Developed over a course of 5 days, the purpose of this project is to showcase an architectural RESTful API, a backend authentication and with good security practice (no passwords or secrets in the public repo). Substantial test suite implemented with CICD at a push of commit.</p>
+                    <p>Powered by IBM Watson's API. Developed over a course of 5 days, the purpose of this project is to showcase an architectural RESTful API, a backend authentication strategy and with good security practice (no passwords or secrets in the public repo). Substantial test suite implemented with CICD setup at a push of commit.</p>
                     <p>Developed in October 2017. Collaborator: <a href="https://quang-portfolio.netlify.com" target="_blank">Quang Nguyen.</a></p> <a id="prev-project-1" href="#project-1"><i class="fa fa-angle-double-up"></i></a></p>
                     <p class="divider-short divider-project"></p>                    
                 </aside>
@@ -378,12 +378,12 @@
       <div id="photos" class="anchor photos"></div>
       <div class="main-photos-container">          
         <section class="section-photos">photos</section>
-        <p class="photos-description">2016 - 2017: My backpacking trips across America by train, Okinawa and the lesser-city sections of Tokyo.</p>
+        <p class="photos-description">2016 - 2017: My backpacking trips across America by train, Okinawa and the lesser-city parts of Tokyo.</p>
         <img class="photos-placeholder kira-kira-2" src="./placeholders/kirakira2.jpg">                
 
         <a class="anchor" id="america"></a>
         <div class="photos-menu">
-          <p><a href="#america">America </a><span class="photos-menu-divider">&nbsp;&nbsp;|&nbsp; </span><a href="#okinawa"> Okinawa </a></p>
+          <p><a href="#america" class='travel-link'>America </a><span class="photos-menu-divider">&nbsp;&nbsp;|&nbsp; </span><a href="#okinawa" class='travel-link'> Okinawa </a></p>
         </div>
 
         <div class="photos-container">
@@ -476,24 +476,62 @@
       <div class="main-contact-container">          
         <section class="section-contact">contact</section>
         <div class="contact-detail-container">
-          <div class="contact-email"> 
-            <a href="mailto:contact@eddiepo.co" target="_self">
+          <div class="contact-left">
+            <div class="contact-left-column">
+              <h1 class="contact-logo">EDDIE<span class="less-space"> </span>PO</h1>
+              <p class="email-caption">EMAIL ADDRESS</p>
+              <p class="email-address"><a href="mailto:contact@eddiepo.co" target="_self" class='contact-link'>「 contact@eddiepo.co 」
+                <!-- <i class="fa fa-angle-double-right"></i> -->
+              </a></p>
+              <p class="location">BASED IN - BUT NOT LIMITED TO - LOS ANGELES</p>
+              <div class="contact-left-column-bottom-row">
+                <p class="lets-talk">Let's talk about work, freelance, yoga, music, and whatever inspires you.</p>
+                <ul class="work-repo-ul">
+                  <li><a href="https://www.linkedin.com/in/adpoyao/" target="_self" class='contact-link work-history'>WORK HISTORY</a></li>
+                  <li><a href="https://github.com/adpoyao/" target="_self" class='contact-link other-repos'>OTHER REPOS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <img class="self-portrait-2" src="./img/contact-bio.png" alt="self-portrait-2"/>
+          </div>
+
+
+          <!-- <div class="contact-email contact-sub-wrappers"> 
+            <a href="mailto:contact@eddiepo.co" target="_self" class='contact-link'>
+              <div class="contact-circle">
+                <p class="contact-top">「email」</p>
+                <div class="contact-divider"></div>
+                <p class='contact-bottom'>me</p>
+              </div>
               <img class="icon email-icon" src="./icons/email-icon.png" alt="email icon">
               <p class="contact-detail hidden">contact@eddiepo.co</p>
             </a>
-          </div>
-          <div class="contact-linkedin">
-            <a href="https://www.linkedin.com/in/adpoyao/" target="_self">
+          </div> -->
+          <!-- <div class="contact-linkedin contact-sub-wrappers">
+            <a href="https://www.linkedin.com/in/adpoyao/" target="_self" class='contact-link'>
+              <div class="contact-circle">
+                <p class="contact-top">linked</p>
+                <div class="contact-divider"></div>
+                <p class='contact-bottom'>in</p>
+              </div>
               <img class="icon linkedin-icon" src="./icons/linkedin-icon.png" alt="linkedin icon">
               <p class="contact-detail hidden">linkedin.com/adpoyao</p>
             </a>
-          </div>
-          <div class="contact-github">
-            <a href="https://github.com/adpoyao/" target="_self">
+          </div> -->
+          <!-- <div class="contact-github contact-sub-wrappers">
+            <a href="https://github.com/adpoyao/" target="_self" class='contact-link'>
+              <div class="contact-circle">
+                <p class="contact-top">git</p>
+                <div class="contact-divider"></div>
+                <p class='contact-bottom'>hub</p>
+              </div>
               <img class="icon github-icon" src="./icons/github-icon.png" alt="github icon">        
               <p class="contact-detail hidden">github.com/adpoyao</p>
             </a>
-          </div>        
+          </div>         -->
         </div>
         <div class="contacts-placeholder hidden"></div> 
       </div>
