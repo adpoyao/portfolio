@@ -121,11 +121,11 @@ a:hover {
 
 /* NAV */
 .hamburger {
-  background:none;
-  position:absolute;
-  right: 14%;
-  line-height:45px;
-  padding:5px 0px 0px 15px;
+  /* background:none; */
+  /* position:absolute; */
+  /* right: 14%; */
+  /* line-height:45px; */
+  padding: 30px 0px 30px 30px;
   color:#999;
   border:0;
   font-size: 1.6em;
