@@ -7,6 +7,8 @@
   /* font-weight: 600; */
 }
 
+
+
 /* LINES  & DIVIDERS */
 .divider-short {
   width: 75px;
@@ -121,13 +123,10 @@ a:hover {
 
 /* NAV */
 .hamburger {
-  /* background:none; */
-  /* position:absolute; */
-  /* right: 14%; */
-  /* line-height:45px; */
+  margin-top: 5px;
   padding: 30px 0px 30px 30px;
   color:#999;
-  border:0;
+  border: 0;
   font-size: 1.6em;
   cursor: pointer;
   outline:none;
@@ -135,14 +134,11 @@ a:hover {
 }
 
 .cross {
-  background:none;
-  position:absolute;
-  top: 17px;
-  right: 11.5%;
+  margin-top: -10px;
+  padding: 30px 0px 20px 30px;
   color:#999;
-  border:0;
-  font-size:3.4em;
-  line-height:58px;
+  border: 0;
+  font-size: 3.4em;
   cursor:pointer;
   outline:none;
   /* z-index:10000000000000; */
@@ -192,7 +188,8 @@ header h1 {
   width: 100%;
   height: 100px;
   padding: 0 14%;
-  border-bottom: 1px solid rgb(151, 151, 151)  
+  border-bottom: 1px solid rgb(151, 151, 151)  ;
+  z-index: 10000;
 }
 
 .desktop-header-line {
@@ -201,15 +198,42 @@ header h1 {
 
 .nav-mobile {
   position: fixed;
-  top: 0;
+  top: 98px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
   width: 100%;
-  height: 380px;  
+  height: 100vh;  
   border-bottom: 1px solid rgb(151, 151, 151);
   border-top: 1px solid rgb(151, 151, 151);  
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list-mobile {
+  margin-top: -100px;
+}
+
+.kira-nav-1 {
+  position: absolute;
+  width: 70px;
+  left: 14%;
+  bottom: 160px;
+}
+
+.kira-nav-2 {
+  position: absolute;
+  width: 50px;
+  right: 50px;
+  bottom: 500px;
+}
+
+.kira-nav-3 {
+  position: absolute;
+  width: 30px;
+  right: 80px;
+  bottom: 110px;
 }
 
 .nav-mobile li {
@@ -609,7 +633,7 @@ footer {
 }
 
 .hidden {
-  display: none
+  display: none;
 }
 
 /*  RESPONSIVE DESIGN*/
@@ -624,17 +648,9 @@ footer {
   .header-captions-mobile .header-caption {
     font-size: 12px;
   }
-
-  .hamburger {
-    position: absolute;
-    top: 23px
-  }
   
   .cross {
     font-size: 3em;
-    margin-right: 3px;
-    position: absolute;
-    top: 17px
   }
 }
 
@@ -646,16 +662,11 @@ footer {
   }
 
   .hamburger {
-    /* position: absolute;
-    top: 23px */
     font-size: 2em
   }
   
   .cross {
     font-size: 4em;
-    position: absolute;
-    top: 19px;
-    right: 12.5%
   }
 }
 
@@ -667,16 +678,11 @@ footer {
   }
 
   .hamburger {
-    /* position: absolute;
-    top: 23px */
     font-size: 2.2em
   }
   
   .cross {
     font-size: 4.1em;
-    position: absolute;
-    top: 19px;
-    right: 13%
   }
 
   .contact-right {
