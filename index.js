@@ -205,3 +205,24 @@ $('.go-to-page-2').on('click', event => {
   $('.photo-part-1').addClass('hidden');
   $('.photo-part-2').removeClass('hidden');
 });
+
+// Hamburger Menu
+$(document).ready(function(){
+  $('.hamburger').click(function(){
+    $('.nav-mobile').removeClass('hidden');
+    $('.cross').removeClass('hidden');
+    $('.hamburger').addClass('hidden');
+  });
+
+  $('.cross').click(function(){
+    $('.nav-mobile').addClass('hidden');
+    $('.cross').addClass('hidden');
+    $('.hamburger').removeClass('hidden');
+  });
+
+  $('.mobile-select').click(function(){
+    $('.nav-mobile').addClass('hidden');
+    $('.cross').addClass('hidden');
+    $('.hamburger').removeClass('hidden');
+  });
+});
