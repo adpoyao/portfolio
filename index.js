@@ -57,8 +57,30 @@ $('a[href*="#"]')
     }
   });
 
-//FADE: ABOUT
 $(document).ready(function(){
+
+  //HAMBURGER MENU
+  $('.hamburger').click(function(){
+    $('.cross').removeClass('hidden');
+    $('.hamburger').addClass('hidden');
+    $('.nav-mobile').addClass('expand');
+  });
+
+  $('.cross').click(function(){
+    $('.nav-mobile').removeClass('expand');
+    $('.nav-mobile').addClass('expandable-nav');
+    $('.cross').addClass('hidden');
+    $('.hamburger').removeClass('hidden');
+  });
+
+  $('.mobile-select').click(function(){
+    $('.nav-mobile').removeClass('expand');
+    $('.nav-mobile').addClass('expandable-nav');
+    $('.cross').addClass('hidden');
+    $('.hamburger').removeClass('hidden');
+  });
+
+  //FADE: ABOUT
   $('.divs div').each(function(e) {
     if (e !== 0)
       $(this).hide();
@@ -89,11 +111,8 @@ $(document).ready(function(){
     }
     return false;
   });
-});
 
-
-//FADE: PROJECT 1
-$(document).ready(function(){
+  //FADE: PROJECT 1
   $('.project-1 div').each(function(e) {
     if (e !== 0)
       $(this).hide();
@@ -124,10 +143,8 @@ $(document).ready(function(){
     }
     return false;
   });
-});
 
-//FADE: PROJECT 2
-$(document).ready(function(){
+  //FADE: PROJECT 2
   $('.project-2 div').each(function(e) {
     if (e !== 0)
       $(this).hide();
@@ -158,10 +175,8 @@ $(document).ready(function(){
     }
     return false;
   });
-});
 
-//FADE: PROJECT 3
-$(document).ready(function(){
+  //FADE: PROJECT 3
   $('.project-3 div').each(function(e) {
     if (e !== 0)
       $(this).hide();
@@ -192,8 +207,72 @@ $(document).ready(function(){
     }
     return false;
   });
-});
 
+  //FADE: PROJECT 4
+  $('.project-4 div').each(function(e) {
+    if (e !== 0)
+      $(this).hide();
+  });
+  
+  $('#next-project-4').click(function(){
+    if ($('.project-4 div:visible').next().length !== 0)
+      $('.project-4 div:visible').fadeOut(function(){
+        $(this).next().fadeIn();
+      });
+    else {
+      $('.project-4 div:visible').fadeOut(function(){
+        $('.divs div:first').fadeIn();
+      });
+    }
+    return false;
+  });
+
+  $('#prev-project-4').click(function(){
+    if ($('.project-4 div:visible').prev().length !== 0)
+      $('.project-4 div:visible').fadeOut(function(){
+        $(this).prev().fadeIn();
+      });
+    else {
+      $('.project-4 div:visible').fadeOut(function(){
+        $('.project-4 div:last').fadeIn();
+      });
+    }
+    return false;
+  });
+
+  //FADE: PROJECT 5
+  $('.project-5 div').each(function(e) {
+    if (e !== 0)
+      $(this).hide();
+  });
+  
+  $('#next-project-5').click(function(){
+    if ($('.project-5 div:visible').next().length !== 0)
+      $('.project-5 div:visible').fadeOut(function(){
+        $(this).next().fadeIn();
+      });
+    else {
+      $('.project-5 div:visible').fadeOut(function(){
+        $('.divs div:first').fadeIn();
+      });
+    }
+    return false;
+  });
+
+  $('#prev-project-5').click(function(){
+    if ($('.project-5 div:visible').prev().length !== 0)
+      $('.project-5 div:visible').fadeOut(function(){
+        $(this).prev().fadeIn();
+      });
+    else {
+      $('.project-5 div:visible').fadeOut(function(){
+        $('.project-5 div:last').fadeIn();
+      });
+    }
+    return false;
+  });
+
+});
 
 //TOGGLE BETWEEN PHOTO PAGES
 $('.go-to-page-1').on('click', event => {
@@ -204,28 +283,4 @@ $('.go-to-page-1').on('click', event => {
 $('.go-to-page-2').on('click', event => {
   $('.photo-part-1').addClass('hidden');
   $('.photo-part-2').removeClass('hidden');
-});
-
-// Hamburger Menu
-$(document).ready(function(){
-  $('.hamburger').click(function(){
-    // $('.nav-mobile').removeClass('hidden');
-    $('.cross').removeClass('hidden');
-    $('.hamburger').addClass('hidden');
-    $('.nav-mobile').addClass('expand');
-  });
-
-  $('.cross').click(function(){
-    $('.nav-mobile').removeClass('expand');
-    $('.nav-mobile').addClass('expandable-nav');
-    $('.cross').addClass('hidden');
-    $('.hamburger').removeClass('hidden');
-  });
-
-  $('.mobile-select').click(function(){
-    $('.nav-mobile').removeClass('expand');
-    $('.nav-mobile').addClass('expandable-nav');
-    $('.cross').addClass('hidden');
-    $('.hamburger').removeClass('hidden');
-  });
 });
