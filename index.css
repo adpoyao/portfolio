@@ -569,7 +569,6 @@ a.anchor-2 {
     font-weight: 400px;
     
     line-height: 40px;
-    /* font-size: 0.8em; */
     letter-spacing: 1px;
   }
 
@@ -595,6 +594,8 @@ a.anchor-2 {
     font-size: 0.8em;
 
     font-size: 0.7em;
+    display: flex;
+    align-items: center;
   }
 
   .work-repo-ul {
@@ -646,6 +647,19 @@ footer {
   display: none;
 }
 
+.expandable-nav {
+  height: 0;
+  transition: all 0.5s ease;
+  margin-top: -250px
+}
+
+.expand {
+  display: flex; 
+  height: 100vh;  
+  transition: all 1.2s ease;
+  margin-top: 0px;
+}
+
 /*  RESPONSIVE DESIGN*/
 
 @media all and (max-width: 320px) {
@@ -693,6 +707,14 @@ footer {
   
   .cross {
     font-size: 4.1em;
+  }
+
+  .email-address {
+    font-size: 1.5em;
+  }
+
+  .lets-talk {
+    font-size: 0.8em;
   }
 
   .contact-right {
@@ -1041,6 +1063,7 @@ footer {
     font-size: 3em;
     letter-spacing: 14px; 
     margin: 0;
+    display: inline;
   }  
 
   .contact-left-column > * {
