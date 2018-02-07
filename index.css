@@ -106,7 +106,7 @@ a:hover {
 }
 
 .black-hover {
-  padding: 25px 5px 15px;
+  padding: 25px 0px 15px;
 }
 
 .name-hover {
@@ -353,6 +353,13 @@ section {
 .divider-project {
   /* margin-top: 50px; */
   margin-bottom: 30px;
+}
+
+.project-name {
+  color: grey;
+  font-family: 'Playfair Display';
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 
 .webdev-combined-picture {
@@ -953,9 +960,12 @@ footer {
   h4 {
     line-height: 100%;
     margin: 0 0 20px 0;
-    font-size: 1.2em;
-    font-family: 'Playfair Display';
+    font-size: 1.4em;
     letter-spacing: 1px;
+  }
+
+  .project-name {
+    font-size: 1.4em;
   }
 
   .devicon {
