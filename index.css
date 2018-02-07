@@ -1214,3 +1214,17 @@ footer {
     margin-left: auto !important
   }
 } */
+
+.capstone-project {
+  /* margin-top: 30px; */
+  /* max-width: 460px; */
+}
+
+.qr-code-container {
+  text-align: center;
+}
+
+.qr-code {
+  max-width: 200px;
+  margin-top: 20px;
+}
