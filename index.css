@@ -551,7 +551,7 @@ a.anchor-2 {
 
   .contact-left-column > * {
     line-height: 30px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin: 0;
   }
 
@@ -603,6 +603,7 @@ a.anchor-2 {
     font-size: 0.7em;
     display: flex;
     align-items: center;
+    /* font-weight: 400; */
   }
 
   .work-repo-ul {
