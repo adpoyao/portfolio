@@ -737,6 +737,11 @@ footer {
     font-size: 0.9em;
   }
 
+  .work-history,
+  .other-repos {
+    font-weight: 600;
+  }
+
   .contact-right {
     text-align: right;
   }
@@ -1153,6 +1158,8 @@ footer {
   .work-history,
   .other-repos {
     line-height: 10px;
+    font-weight: 600;
+    font-size: 1.1em;
   }
 
     /* .contact-detail-container > * {
